@@ -14,7 +14,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  result = text[0].match(/^[A-Z].*\./) ? true : false
+  result = text.match(/^[A-Z].*\./) ? true : false
   binding.pry
   result
 end
